@@ -23,7 +23,6 @@ $(function () {
                 var _n1 = oe.attr('data-n1');
                 if (_n1 != null) {
                     if (oe.hasClass('not-active')) {
-                        console.log("oe");
                         __char__01(oe, _n1);
                         oe.removeClass('not-active');
                     }
@@ -39,8 +38,6 @@ $(function () {
                     }
                     else if (_func == "char_03") {
                         if (oe.hasClass('not-active')) {
-                            console.log("oe3");
-
                             __char__03();
                             oe.removeClass('not-active');
                             oe.attr('data-func', '-1');
@@ -49,8 +46,6 @@ $(function () {
                     }
                     else if (_func == "char_04") {
                         if (oe.hasClass('not-active')) {
-                            console.log("oe4");
-
                             __char__04();
                             oe.removeClass('not-active');
                             oe.attr('data-func', '-1');
@@ -101,7 +96,8 @@ function __char__02() {
             datasets: [{
                 data: [13, 7, 8, 4],
                 backgroundColor: '#00a0e9',
-                borderWidth: 1
+                borderWidth: 1,
+                barPercentage: 0.8
             }]
         },
         options: {
@@ -111,9 +107,6 @@ function __char__02() {
                         beginAtZero: true
                     }
                 }],
-                xAxes: [{
-                    barPercentage: 0.8
-                }]
             },
             legend: {
                 display: false
@@ -182,7 +175,8 @@ function __char__04() {
                 label: 'none',
                 data: [3, 26, 3],
                 backgroundColor: '#00a0e9',
-                borderWidth: 1
+                borderWidth: 1,
+                barPercentage: 0.5
             }]
         },
         options: {
@@ -201,9 +195,6 @@ function __char__04() {
                     ticks: {
                         beginAtZero: true
                     }
-                }],
-                xAxes: [{
-                    barPercentage: 0.5
                 }]
             },
         }
